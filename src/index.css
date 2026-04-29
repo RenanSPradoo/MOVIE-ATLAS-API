@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =============================
+   Theme tokens
+============================= */
+:root {
+  --color-base: 245 246 248;
+  --color-surface: 255 255 255;
+  --color-card: 255 255 255;
+  --color-text: 17 24 39;
+  --color-muted: 100 116 139;
+  --color-border: 226 232 240;
+  --color-accent: 229 9 20;
+  --color-accent-2: 15 118 110;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-2xl: 24px;
+
+  --shadow-card: 0 12px 30px -18px rgba(0, 0, 0, 0.45);
+
+  --font-sans: "Segoe UI Variable", "SF Pro Display", "Helvetica Neue", sans-serif;
+  --font-size-base: 16px;
+  --line-height-base: 1.6;
+}
+
+.dark {
+  --color-base: 0 0 0;
+  --color-surface: 10 10 10;
+  --color-card: 16 16 16;
+  --color-text: 248 250 252;
+  --color-muted: 148 163 184;
+  --color-border: 35 35 35;
+  --color-accent: 229 9 20;
+  --color-accent-2: 34 211 238;
+}
+
+/* =============================
+   Base
+============================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  color: rgb(var(--color-text));
+  background:
+    radial-gradient(900px 500px at 10% -10%, rgb(var(--color-accent) / 0.25), transparent 60%),
+    radial-gradient(700px 400px at 90% 10%, rgb(var(--color-accent-2) / 0.18), transparent 55%),
+    linear-gradient(180deg, rgb(var(--color-base)), rgb(var(--color-surface)));
+  min-height: 100vh;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+/* =============================
+   Skeleton loading
+============================= */
+@keyframes shimmer {
+  0%   { background-position: -400% 0; }
+  100% { background-position:  400% 0; }
+}
+
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    rgb(var(--color-surface)) 25%,
+    rgb(var(--color-card))    50%,
+    rgb(var(--color-surface)) 75%
+  );
+  background-size: 400% 100%;
+  animation: shimmer 1.5s ease-in-out infinite;
+}
+
+/* =============================
+   Accessibility
+============================= */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms;
+    animation-iteration-count: 1;
+    transition-duration: 0.001ms;
+    scroll-behavior: auto;
+  }
+}

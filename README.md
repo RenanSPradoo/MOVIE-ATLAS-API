@@ -7,7 +7,7 @@
 [![React Router](https://img.shields.io/badge/React_Router-6-CA4245?logo=reactrouter&logoColor=white)](https://reactrouter.com/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 [![Axios](https://img.shields.io/badge/Axios-1-5A29E4)](https://axios-http.com/)
-[![Deploy](https://img.shields.io/badge/Deploy-Online-brightgreen)](LINK_DO_DEPLOY)
+[![Deploy](https://img.shields.io/badge/Deploy-Online-brightgreen)](https://movie-atlas-api-renanspradoo.vercel.app)
 
 ---
 
@@ -15,11 +15,9 @@
 
 | Home | Detalhe do Filme |
 |------|-----------------|
-| ![Home](docs/home.png) | ![Detalhe](docs/detail.png) |
+| ![Home](https://i.imgur.com/placeholder1.png) | ![Detalhe](https://i.imgur.com/placeholder2.png) |
 
-| Busca | Favoritos |
-|-------|-----------|
-| ![Busca](docs/search.png) | ![Favoritos](docs/favorites.png) |
+> **Nota:** Adicione capturas de tela reais na pasta `docs/` e atualize os links acima após o deploy.
 
 ---
 
@@ -205,6 +203,7 @@ tmdb-movies/
 ├── index.html
 ├── package.json
 ├── tailwind.config.js
+├── vercel.json                  # Rewrite para roteamento SPA na Vercel
 └── vite.config.js
 ```
 
@@ -221,8 +220,8 @@ tmdb-movies/
 ### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/<seu-usuario>/<nome-do-repo>.git
-cd <nome-do-repo>
+git clone https://github.com/RenanSPradoo/MOVIE-ATLAS-API.git
+cd MOVIE-ATLAS-API
 ```
 
 ### 2. Instale as dependências
@@ -269,22 +268,24 @@ Acesse **http://localhost:5173** no navegador.
 
 ### Vercel (recomendado)
 
-1. Faça push do projeto para um repositório no GitHub
-2. Acesse [vercel.com](https://vercel.com/) e importe o repositório
+1. Faça push do projeto para o repositório no GitHub
+2. Acesse [vercel.com](https://vercel.com/) e importe o repositório `RenanSPradoo/MOVIE-ATLAS-API`
 3. Em **Settings → Environment Variables**, adicione:
    ```
    VITE_TMDB_API_KEY = sua_chave_aqui
    ```
 4. Clique em **Deploy**
 
-**URL de produção:** [LINK_DO_DEPLOY]
+O arquivo `vercel.json` já está configurado para roteamento SPA (todas as rotas redirecionam para `index.html`).
+
+**URL de produção:** [https://movie-atlas-api-renanspradoo.vercel.app](https://movie-atlas-api-renanspradoo.vercel.app)
 
 ---
 
 ## 👤 Autor
 
-**Seu Nome Aqui**  
-GitHub: [@seu-usuario](https://github.com/seu-usuario)
+**Renan Silva Prado**  
+GitHub: [@RenanSPradoo](https://github.com/RenanSPradoo)
 
 ---
 

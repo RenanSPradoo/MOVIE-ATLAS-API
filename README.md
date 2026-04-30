@@ -7,7 +7,7 @@
 [![React Router](https://img.shields.io/badge/React_Router-6-CA4245?logo=reactrouter&logoColor=white)](https://reactrouter.com/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 [![Axios](https://img.shields.io/badge/Axios-1-5A29E4)](https://axios-http.com/)
-[![Deploy](https://img.shields.io/badge/Deploy-Online-brightgreen)](https://movie-atlas-api-renanspradoo.vercel.app)
+[![Deploy](https://img.shields.io/badge/Deploy-Online-brightgreen)](https://movie-atlas-api.vercel.app)
 
 ---
 
@@ -278,7 +278,7 @@ Acesse **http://localhost:5173** no navegador.
 
 O arquivo `vercel.json` já está configurado para roteamento SPA (todas as rotas redirecionam para `index.html`).
 
-**URL de produção:** [https://movie-atlas-api-renanspradoo.vercel.app](https://movie-atlas-api-renanspradoo.vercel.app)
+**URL de produção:** [https://movie-atlas-api.vercel.app](https://movie-atlas-api.vercel.app)
 
 ---
 
